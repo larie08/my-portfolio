@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --port-navy-950: #0a1635;
+  --port-navy-900: #0f2260;
+  --port-navy-800: #16306f;
+  --port-navy-700: #203d82;
+
+  --port-pink-300: #f8bbd0;
+  --port-pink-500: #ec4899;
+  --port-pink-600: #db2777;
+
+  --port-fg: #f4f3ef;
+  --port-fg-muted: #b8c0d9;
+  --port-fg-faint: #7986ad;
+
+  --port-bg: var(--port-navy-950);
+  --port-bg-elevated: var(--port-navy-900);
+  --port-bg-card: #11244f;
+
+  --port-border: rgba(248, 187, 208, 0.12);
+  --port-border-strong: rgba(248, 187, 208, 0.28);
+
+  --port-section-py: clamp(4rem, 10vw, 9rem);
+  --port-container-px: clamp(1.25rem, 5vw, 4rem);
+}
+
+@theme inline {
+  --color-bg: var(--port-bg);
+  --color-bg-elevated: var(--port-bg-elevated);
+  --color-bg-card: var(--port-bg-card);
+
+  --color-navy-950: var(--port-navy-950);
+  --color-navy-900: var(--port-navy-900);
+  --color-navy-800: var(--port-navy-800);
+  --color-navy-700: var(--port-navy-700);
+
+  --color-pink-300: var(--port-pink-300);
+  --color-pink-500: var(--port-pink-500);
+  --color-pink-600: var(--port-pink-600);
+
+  --color-fg: var(--port-fg);
+  --color-fg-muted: var(--port-fg-muted);
+  --color-fg-faint: var(--port-fg-faint);
+
+  --color-border: var(--port-border);
+  --color-border-strong: var(--port-border-strong);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  border-color: var(--port-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--port-bg);
+  color: var(--port-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--port-pink-500);
+  color: var(--port-navy-950);
+}
+
+.cursor-active,
+.cursor-active * {
+  cursor: none !important;
+}
+
+@media (max-width: 768px) {
+  .cursor-active,
+  .cursor-active * {
+    cursor: auto !important;
+  }
+}
