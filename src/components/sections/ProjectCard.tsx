@@ -26,7 +26,6 @@ export function ProjectCard({ project, index }: { project: CaseStudy; index: num
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.6, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
     >
-      {/* Whole card links to the case study page */}
       <Link
         href={`/work/${project.slug}`}
         data-cursor="pointer"
@@ -52,7 +51,6 @@ export function ProjectCard({ project, index }: { project: CaseStudy; index: num
               )}
             </div>
 
-            {/* Hover overlay hint that this opens the case study */}
             <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <span className="flex items-center gap-2 rounded-full bg-navy-950/80 px-4 py-2 font-mono text-xs text-pink-300 backdrop-blur-sm">
                 View case study
@@ -104,7 +102,6 @@ export function ProjectCard({ project, index }: { project: CaseStudy; index: num
         </div>
       </Link>
 
-      {/* Separate action buttons */}
       <div className="mt-4 flex flex-wrap gap-2">
         {project.figmaUrl && (
           <a
