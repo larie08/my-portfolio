@@ -17,34 +17,34 @@ export const projects: CaseStudy[] = [
     repoUrl: "https://github.com/abaoski/safemap",
     figmaUrl: "https://www.figma.com/design/YDLULmBKunxyAkkjZHD5u1/SafeMap-PH?t=mxf29ESLp5b36xzt-1",
 
-    client: "Local Government Initiative",
-    timeline: "8 weeks",
+    client: "Students",
+    timeline: "6 weeks",
 
     problem:
       "Citizens often feel hesitant to report local incidents—such as road hazards, public safety concerns, or infrastructure issues—due to fears of retaliation or the perception that the reporting process is overly bureaucratic and time-consuming. This leaves local government units (LGUs) with blind spots in their community management.",
     constraints: [
-      "Strict requirement for complete user anonymity to encourage reporting.",
-      "Mobile-first design priority for on-the-go incident submission.",
-      "Minimalist interface to ensure accessibility for users with varying levels of digital literacy.",
+      "The client required OTP verification to validate the authenticity of incident reports.",
+      "Budget constraints prevented the integration of traditional SMS OTP services.",
+      "A WhatsApp-based OTP confirmation process was implemented as a cost-effective alternative that met both functional and financial requirements.",
     ],
 
     process: [
       {
         title: "Discovery",
         description:
-          "I conducted interviews with local community members to understand their hesitation regarding reporting. I learned that trust and ease of use were the primary barriers; if a report took more than 30 seconds to submit, users were likely to abandon the process.",
+          "During the initial discussions, the client shared their vision of creating a community-driven incident reporting platform. They identified the limitations of traditional reporting methods, such as slow communication and limited accessibility, and sought a digital solution that would enable users to submit reports quickly while helping authorities manage incidents more efficiently.",
       },
       {
         title: "Wireframing",
         description:
           "I focused on a 'Report in 3 Taps' flow. The wireframes prioritized the geolocation feature and image upload functionality as the core components, ensuring the interface remained clean and distraction-free.",
-        image: "/projects/safemapph/wireframes.jpg",
+        image: "/projects/prototype.png",
       },
       {
         title: "Iteration",
         description:
-          "Initial designs included a profile login requirement to curb spam, but stakeholder feedback highlighted that this discouraged anonymous reporting. I pivoted to a token-based session system, removing login barriers while still preventing mass-spamming.",
-        image: "/projects/safemapph/iteration.jpg",
+          "Following interviews with local police authorities, the clients received feedback that the system should include an OTP verification process to help confirm the legitimacy of submitted incident reports. This recommendation was incorporated into the design to reduce false reports while maintaining a simple reporting experience for users.",
+        image: "/projects/report.png",
       },
     ],
 
@@ -64,14 +64,6 @@ export const projects: CaseStudy[] = [
       "/projects/safemapph/final-1.jpg",
       "/projects/safemapph/final-2.jpg",
     ],
-
-    impact:
-      "Successfully launched with a highly intuitive interface that reduced the average reporting time by 70% compared to traditional paper-based or call-in methods. The platform saw an 85% increase in voluntary incident reports in its first month of pilot usage.",
-    testimonial: {
-      quote: "The interface is so intuitive that we've seen a spike in reports from demographic groups that previously never engaged with our office.",
-      author: "Local Government Representative",
-      role: "Public Information Officer",
-    },
 
     reflection:
       "As my first client project, I learned the critical importance of balancing user privacy with data validation. Next time, I would integrate more robust offline-mode capabilities to ensure reports can be submitted even in areas with poor cellular reception.",
@@ -112,8 +104,8 @@ export const projects: CaseStudy[] = [
         {
           title: "Wireframing",
           description: 
-            "I designed separate portals for each user type. Key flow decisions included a 'Donor Health Questionnaire' flow, a secure 'Milk Traceability' ledger for staff, and a simplified 'Request Tracking' interface for recipients to provide peace of mind.",
-          image: "/projects/internship/wireframes.jpg",
+            "I designed separate portals for each user type: Self-service Donor, Milk Bank Staff, Lab Technician, Admin, and Lab Consultant. Key flow decisions included a 'Health Screening Questionnaire' flow, a secure 'Milk Inventory' interface for staff, and a simplified 'Order Tracker' email for recipients to provide peace of mind.",
+          image: "/projects/kalinga prototype.png",
         },
       ],
 
@@ -131,7 +123,7 @@ export const projects: CaseStudy[] = [
       ],
       finalImages: ["/projects/internship/final-1.jpg"],
 
-      impact: "The design was recognized by project leadership for its clear communication of complex clinical flows and was used as the primary prototype for the startup's pitch for seed funding, successfully demonstrating the system's viability and safety model.",
+      impact: "The design was recognized by our project lead, and CEO for its clear communication of complex clinical flows and was used as the primary prototype for the startup's pitch for seed funding, successfully demonstrating the system's viability and safety model.",
 
       reflection: "Working independently during my internship taught me how to take ownership of a problem and self-scope features without constant oversight. I learned that in healthcare design, building trust through transparency is just as important as the functionality itself.",
 
@@ -157,24 +149,34 @@ export const projects: CaseStudy[] = [
       process: [
         {
           title: "Research",
-          description: "I conducted user surveys among photography students and hobbyists to identify their primary pain points: lack of equipment insurance, identity verification, and clear return policies. I also audited existing marketplace apps to map out common friction points in transaction flows.",
+          description:
+            "My research began with a personal experience. As someone who regularly rented digital cameras through Facebook Marketplace and Instagram, I encountered a scam that highlighted the lack of trust and security in peer-to-peer rental transactions. This inspired me to design a solution that gives both renters and camera owners greater confidence through a safer and more transparent rental experience.",
         },
         {
           title: "Wireframing",
-          description: "I focused on a 'Verified Trust' flow. Key layouts included a robust user profile verification screen, an integrated equipment-condition checklist, and a secure in-app escrow system for payments to ensure both parties felt protected throughout the rental period.",
-          image: "/projects/school/wireframes.jpg",
+          description:
+            "I translated the user journey into high-fidelity wireframes, mapping the complete rental flow from browsing available cameras, viewing product details, checking availability, selecting rental dates, and tracking orders. This helped validate the navigation structure and ensure users could complete the rental process with minimal friction.",
+          image: "/projects/lenslend prototype.png",
         },
       ],
 
-      solutionSummary: "LensLend provides a safe marketplace where users can browse, rent, and list photography gear. The design emphasizes security through a mandatory identity verification system, transparent equipment condition reporting, and an integrated insurance module for added peace of mind.",
+      solutionSummary: "LensLend is a end-to-end camera rental marketplace with five core screens: a landing page for discovery, a shop for browsing gear by brand and category, a product detail view with specs and availability, a booking flow with calendar-based scheduling, and an orders dashboard for tracking active and past rentals. The design prioritizes clarity and trust at every step — from browsing to confirmed booking.",
       keyDecisions: [
         {
-          decision: "Implemented a mandatory pre-rental condition checklist",
-          rationale: "By requiring both the owner and renter to confirm the state of the gear through photos before and after the rental, I created an objective record that resolves disputes regarding damage.",
+          decision: "Calendar-based availability screen",
+          rationale: "Rather than showing a simple 'available/unavailable' label, a full month calendar lets renters see exact open dates at a glance and immediately set their rental window — reducing back-and-forth between renter and owner.",
         },
         {
-          decision: "Designed a 'Trust Score' for users",
-          rationale: "A visible rating system based on past successful rentals builds community accountability and encourages responsible behavior from both owners and renters.",
+          decision: "Brand-forward shop layout with recognizable logos",
+          rationale: "Displaying Canon, Sony, Nikon, Fujifilm, Panasonic, and Samsung logos prominently in the shop anchors the browsing experience in familiar brands, building instant credibility and helping users filter by what they already trust.",
+        },
+        {
+          decision: "Dedicated orders dashboard with status tracking",
+          rationale: "Separating active, cancelled, and older orders into a clear timeline gives renters full visibility into their rental history and ongoing bookings, reducing anxiety about whether a transaction went through.",
+        },
+        {
+          decision: "Product detail page with Space, Price, and Reviews tabs",
+          rationale: "Organizing detailed product information into tabs keeps the screen uncluttered while still surfacing everything a renter needs to make a confident decision before checking availability.",
         },
       ],
       finalImages: ["/projects/school/final-1.jpg"],
@@ -204,12 +206,12 @@ export const projects: CaseStudy[] = [
       process: [
         {
           title: "Research",
-          description: "We conducted time-motion studies at local laundromats and interviewed customers to identify the most frequent pain points. The consensus was a strong desire for transparency in pricing (based on weight) and automated updates to avoid unnecessary trips to the shop.",
+          description: "We conducted time-motion studies at local laundromats and interviewed customers, laundry staff, and laundry shop owners to identify the most frequent pain points. For customers, the consensus was a strong desire for transparency in pricing based on weight and automated updates to avoid unnecessary trips to the shop. For staff and shop owners, the primary concerns were reducing manual weighing errors, streamlining order tracking, and having a reliable way to communicate order status without fielding constant phone calls.",
         },
         {
           title: "Wireframing",
-          description: "I focused on a 'Unified Order Workflow.' Key layout decisions included a real-time weight display dashboard that syncs with the IoT scale, a customization wizard for detergents/fabcon, and an integrated payment gateway screen.",
-          image: "/projects/school/wireframes.jpg",
+          description: "My team focused on a 'Unified Order Workflow.' Key layout decisions included a real-time weight display dashboard that syncs with the IoT scale, a customization wizard for detergents/fabcon, and an integrated payment gateway screen.",
+          image: "/projects/laundrylink prototype.png",
         },
       ],
 
@@ -250,12 +252,12 @@ export const projects: CaseStudy[] = [
       process: [
         {
           title: "Research",
-          description: "I conducted a competitive audit of high-end boutique mobile apps, identifying that the most successful designs utilized generous whitespace and simplified iconography to foster a sense of luxury. I created user personas to map out a frictionless path from product discovery to purchase.",
+          description: "I conducted a competitive audit of high-end boutique mobile apps, identifying that the most successful designs utilized generous whitespace and simplified iconography to foster a sense of luxury.",
         },
         {
           title: "Wireframing",
           description: "My wireframing process focused on 'The Focused View.' I prioritized high-fidelity imagery and stripped away non-essential UI elements, ensuring the interface served as a digital canvas for the products.",
-          image: "/projects/personal/wireframes.jpg",
+          image: "/projects/atelier lane prototype.png",
         },
       ],
 
@@ -286,7 +288,7 @@ export const projects: CaseStudy[] = [
       year: "2025",
       role: "UI/UX Designer",
       tools: ["Figma"],
-      coverImage: "/projects/UClean360.jpg",
+      coverImage: "/projects/UClean360.png",
 
       hasDevWork: false,
       figmaUrl: "https://www.figma.com/design/ik5UfLHs7hwtZNkGW9oetp/UCLEAN360?t=mxf29ESLp5b36xzt-1",
@@ -296,12 +298,12 @@ export const projects: CaseStudy[] = [
       process: [
         {
           title: "Research",
-          description: "I conducted observational studies of janitorial workflows and interviewed staff to understand the physical and time-based constraints of their daily duties. The core finding was that 'predictability' was the primary source of stress; they needed a system that told them where to go, rather than forcing them to walk the whole facility.",
+          description: "My team conducted observational studies of janitorial workflows and interviewed staff to understand the physical and time-based constraints of their daily duties. The core finding was that 'predictability' was the primary source of stress; they needed a system that told them where to go, rather than forcing them to walk the whole facility.",
         },
         {
           title: "Wireframing",
           description: "I focused on a 'Heat-Map Driven' interface. Key layout decisions included a live floor-plan map that color-coded bins by capacity, and a prioritized 'Collection Queue' that calculated the shortest path between all full bins.",
-          image: "/projects/school/wireframes.jpg",
+          image: "/projects/uclean prototype.png",
         },
       ],
 
