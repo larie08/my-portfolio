@@ -195,7 +195,7 @@ export const projects: CaseStudy[] = [
       year: "2025",
       role: "Project Manager, UI/UX Designer, Front-End Developer",
       tools: ["Figma", "React", "Arduino/IoT Integration"],
-      coverImage: "/projects/LaundryLink.jpg",
+      coverImage: "/projects/Laundry Link.jpg",
 
       hasDevWork: true,
       repoUrl: "https://github.com/larie08/laundry-link",
