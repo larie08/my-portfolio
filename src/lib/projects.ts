@@ -130,6 +130,52 @@ export const projects: CaseStudy[] = [
       featured: true,
   },
 
+  {
+      slug: "atelier-lane",
+      title: "Atelier Lane",
+      tagline: "A refined, minimalist mobile shopping experience designed to elevate boutique e-commerce through intuitive navigation and visual storytelling.",
+      category: "personal",
+      platform: ["mobile"],
+      year: "2026",
+      role: "UI/UX Designer",
+      tools: ["Figma"],
+      coverImage: "/projects/Atelier Lane.jpg",
+
+      hasDevWork: false,
+      figmaUrl: "https://www.figma.com/design/REQyUEPeqNUJqhqZ8a378a/Mobile-E-Commerce-App-Design?t=mxf29ESLp5b36xzt-1",
+
+      problem: "Many modern e-commerce apps suffer from 'feature bloat' and cluttered interfaces, which distract users from the products themselves and increase friction during the checkout process. The challenge was to create a mobile-first experience that feels curated and premium while remaining functionally efficient.",
+      
+      process: [
+        {
+          title: "Research",
+          description: "I conducted a competitive audit of high-end boutique mobile apps, identifying that the most successful designs utilized generous whitespace and simplified iconography to foster a sense of luxury.",
+        },
+        {
+          title: "Wireframing",
+          description: "My wireframing process focused on 'The Focused View.' I prioritized high-fidelity imagery and stripped away non-essential UI elements, ensuring the interface served as a digital canvas for the products.",
+          image: "/projects/atelier lane prototype.png",
+        },
+      ],
+
+      solutionSummary: "Atelier Lane is a clean, user-centric e-commerce application that prioritizes visual clarity. The final design features a highly streamlined navigation structure, a simplified one-page checkout, and an aesthetic language that emphasizes luxury through minimalist design principles.",
+      keyDecisions: [
+        {
+          decision: "Adopted a 'Bottom-Nav' centered navigation",
+          rationale: "To ensure one-handed usability on modern smartphones, placing all primary actions within easy reach of the thumb significantly improves the user's efficiency.",
+        },
+        {
+          decision: "Implemented 'Progressive Disclosure' for product details",
+          rationale: "By hiding complex specifications behind expandable accordions, the product page remains visually light while still providing necessary information for power users.",
+        },
+      ],
+      finalImages: ["/projects/personal/final-1.jpg"],
+
+      reflection: "This project served as the perfect sandbox to apply advanced UI/UX principles like visual hierarchy and cognitive load reduction. It taught me that luxury in design isn't about adding decorative elements, but about removing everything that prevents the user from achieving their goal.",
+
+      featured: false,
+  },
+
     {
       slug: "lenslend",
       title: "LensLend",
@@ -229,52 +275,6 @@ export const projects: CaseStudy[] = [
       finalImages: ["/projects/school/final-1.jpg"],
 
       reflection: "As project manager, I learned that the technical complexity of integrating IoT hardware requires strict synchronization with the UI/UX design. This project taught me how to bridge the gap between physical machine data and a clean digital experience while managing a team's deliverables.",
-
-      featured: false,
-  },
-
-    {
-      slug: "atelier-lane",
-      title: "Atelier Lane",
-      tagline: "A refined, minimalist mobile shopping experience designed to elevate boutique e-commerce through intuitive navigation and visual storytelling.",
-      category: "personal",
-      platform: ["mobile"],
-      year: "2026",
-      role: "UI/UX Designer",
-      tools: ["Figma"],
-      coverImage: "/projects/Atelier Lane.jpg",
-
-      hasDevWork: false,
-      figmaUrl: "https://www.figma.com/design/REQyUEPeqNUJqhqZ8a378a/Mobile-E-Commerce-App-Design?t=mxf29ESLp5b36xzt-1",
-
-      problem: "Many modern e-commerce apps suffer from 'feature bloat' and cluttered interfaces, which distract users from the products themselves and increase friction during the checkout process. The challenge was to create a mobile-first experience that feels curated and premium while remaining functionally efficient.",
-      
-      process: [
-        {
-          title: "Research",
-          description: "I conducted a competitive audit of high-end boutique mobile apps, identifying that the most successful designs utilized generous whitespace and simplified iconography to foster a sense of luxury.",
-        },
-        {
-          title: "Wireframing",
-          description: "My wireframing process focused on 'The Focused View.' I prioritized high-fidelity imagery and stripped away non-essential UI elements, ensuring the interface served as a digital canvas for the products.",
-          image: "/projects/atelier lane prototype.png",
-        },
-      ],
-
-      solutionSummary: "Atelier Lane is a clean, user-centric e-commerce application that prioritizes visual clarity. The final design features a highly streamlined navigation structure, a simplified one-page checkout, and an aesthetic language that emphasizes luxury through minimalist design principles.",
-      keyDecisions: [
-        {
-          decision: "Adopted a 'Bottom-Nav' centered navigation",
-          rationale: "To ensure one-handed usability on modern smartphones, placing all primary actions within easy reach of the thumb significantly improves the user's efficiency.",
-        },
-        {
-          decision: "Implemented 'Progressive Disclosure' for product details",
-          rationale: "By hiding complex specifications behind expandable accordions, the product page remains visually light while still providing necessary information for power users.",
-        },
-      ],
-      finalImages: ["/projects/personal/final-1.jpg"],
-
-      reflection: "This project served as the perfect sandbox to apply advanced UI/UX principles like visual hierarchy and cognitive load reduction. It taught me that luxury in design isn't about adding decorative elements, but about removing everything that prevents the user from achieving their goal.",
 
       featured: false,
   },
