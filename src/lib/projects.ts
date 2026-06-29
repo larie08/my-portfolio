@@ -285,7 +285,7 @@ export const projects: CaseStudy[] = [
       tagline: "An intelligent waste management dashboard that optimizes janitorial collection routes through real-time bin capacity monitoring.",
       category: "school",
       platform: ["mobile"],
-      year: "2025",
+      year: "2024",
       role: "UI/UX Designer",
       tools: ["Figma"],
       coverImage: "/projects/UClean360.png",
